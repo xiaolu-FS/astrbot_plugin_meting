@@ -38,10 +38,8 @@
 - **API 配置对象化**：将 API 相关配置整合为 `api_config` 对象，支持预设 API 选择和自定义 API
 
 ### 改进
-- **音乐卡片默认关闭**：`use_music_card` 默认改为 `false`，避免未配置签名服务时出错
 - **URL 强制 HTTPS**：音乐卡片相关 URL 自动转换为 HTTPS，提高安全性
 - **音源别名扩展**：切换音源命令支持更多别名，如 `切换腾讯音乐`、`切换QQMusic` 等
-- **哔哩哔哩音源支持**：音乐卡片支持 bilibili 音源（如 API 支持）
 
 ### 更新鸣谢
 - 感谢 [NanoRocky](https://github.com/NanoRocky) 提供的PR与功能添加与代码优化
