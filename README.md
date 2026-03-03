@@ -4,6 +4,12 @@
 
 **当前版本：v1.0.8**
 
+> [!WARNING]
+> ## 兼容性声明
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;·&nbsp;因 AstrBot 旧版本缺失对 JSON 消息的兼容性，所以要使用音乐卡片功能，您必须确保您的 AstrBot 版本在 `4.17.6` 以上。<p>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;·&nbsp;在遇到问题时，请打开 DEBUG 日志并检查插件输出的兼容性检查结果。<p>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;·&nbsp;如果需要帮助，提交 ISSUE 时请附带插件日志，和插件输出的兼容性检查结果，并说明目前 AstrBot 版本及插件版本。<p>
+
 ## 音乐卡片说明（推荐使用，因为转语音音质打折扣）
 
 - 音乐卡片功能默认关闭（默认为 `false`）
