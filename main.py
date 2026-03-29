@@ -529,18 +529,13 @@ class MetingPlugin(Star):
             return self._session_audio_locks[session_id]
 
     def _find_ffmpeg(self) -> str:
-        """查找 FFmpeg 路径
-
-        Returns:
-            str: FFmpeg 可执行文件路径，未找到返回空字符串
-        """
-        ffmpeg_exe = shutil.which("ffmpeg")
-        if ffmpeg_exe:
-            logger.info(f"找到 FFmpeg: {ffmpeg_exe}")
-            return ffmpeg_exe
-        logger.warning("未找到 FFmpeg，请确保已安装 FFmpeg")
-        return ""
-
+        ffmpeg_path = r"C:\ffmpeg\bin\ffmpeg.exe"
+        if os.path.exists(ffmpeg_path):
+            logger.info(f"使用固定 FFmpeg: {ffmpeg_path}")
+            return ffmpeg_path
+        else:
+            logger.warning(f"FFmpeg 不存在: {ffmpeg_path}")
+            return ""
     # 本地主机名黑名单（包括各种变体）
     _LOCAL_HOSTNAMES = frozenset(
         {
